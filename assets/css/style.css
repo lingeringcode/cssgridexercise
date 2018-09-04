@@ -1,19 +1,74 @@
-/*
-  Write the general styles of your content
-  For example, a typography scheme.
-*/
+/* TYPOGRAPHY */
+
+html { font-size: 18px; }
+h1   { font-size: 2.75rem; }
+h2   { font-size: 2rem; }
+h3   { font-size: 1.5rem; }
+p    { font-size: 1rem; }
+a    { font-size: 1.1rem; }
+
+a:hover {
+  color: inherit;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+/* GENERAL */
+
+nav {
+  height: 50px;
+  background: #d4b3b3;
+  border-bottom: 1px solid #eeeeee;
+}
+
+header {
+  align-items: center;
+  background: #d4b3b3ab;
+  display: flex;
+  min-height: 200px;
+  padding-left: 15px;
+  border-bottom: 10px solid #eeeeee;
+  margin-bottom: 15px;
+}
+main section {
+  padding: 25px;
+}
+main section:nth-child(even) {
+  background: #d4b3b3ab;
+}
+section ul li {
+  list-style-type: none;
+}
+section ul li:before {
+  content: '✓';
+}
+
+/* GRID */
+
+main {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat( auto-fit, minmax(320px, 1fr) );
+}
+section.more-content {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat( auto-fit, minmax(190px, 1fr) )
+}
 
 
-/*
-  Write your CSS3 grid code here.
-*/
+/* SECTION CONTENT */
 
-
-/*
-  Refine the design of your child elements here.
-  For example, play around with white space with
-  padding, margins, and line-heights.
-*/
+img.section-content-width {
+  width: 150px;
+}
+img.section-portfolio-width {
+  width: 100%;
+}
+img.img-float-left {
+  float: left;
+  padding: 0px 15px 15px 0px;
+}
 
 
 /* Note: If you'd like to test your skills with
