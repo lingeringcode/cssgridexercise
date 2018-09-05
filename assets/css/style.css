@@ -1,8 +1,9 @@
 /* TYPOGRAPHY */
 
 html { font-size: 18px; }
-h1   { font-size: 2.75rem; }
-h2   { font-size: 2rem; }
+/* responsive font sizes with calc() */
+h1   { font-size: calc(1rem + 8vw); }
+h2   { font-size: calc(1rem + 3vw); }
 h3   { font-size: 1.5rem; }
 p    { font-size: 1rem; }
 a    { font-size: 1.1rem; }
@@ -36,6 +37,8 @@ main section {
 main section:nth-child(even) {
   background: #d4b3b3ab;
 }
+
+/* Custom list items */
 section ul li {
   list-style-type: none;
 }
@@ -48,7 +51,8 @@ section ul li:before {
 main {
   display: grid;
   grid-gap: 15px;
-  grid-template-columns: repeat( auto-fit, minmax(320px, 1fr) );
+  grid-template-columns:
+    minmax(1.2rem, 1fr) minmax(auto, 60vw) minmax(1.2rem, 1fr);
 }
 section.more-content {
   display: grid;
@@ -69,10 +73,3 @@ img.img-float-left {
   float: left;
   padding: 0px 15px 15px 0px;
 }
-
-
-/* Note: If you'd like to test your skills with
-    @media queries, feel free to do so. We will
-    review those CSS writing and design
-    techniques in class.
-*/
