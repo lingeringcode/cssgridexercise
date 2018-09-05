@@ -38,14 +38,6 @@ main section:nth-child(even) {
   background: #d4b3b3ab;
 }
 
-/* Custom list items */
-section ul li {
-  list-style-type: none;
-}
-section ul li:before {
-  content: '✓';
-}
-
 /* GRID */
 
 main {
@@ -72,4 +64,11 @@ img.section-portfolio-width {
 img.img-float-left {
   float: left;
   padding: 0px 15px 15px 0px;
+}
+/* Custom list items */
+section ul li {
+  list-style-type: none;
+}
+section ul li:before {
+  content: '✓';
 }
