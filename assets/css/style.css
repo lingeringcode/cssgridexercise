@@ -19,7 +19,8 @@ a:hover {
 nav {
   height: 50px;
   background: #d4b3b3;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 5px solid #c2afaf;
+  margin-bottom: 15px;
 }
 
 header {
@@ -28,8 +29,7 @@ header {
   display: flex;
   min-height: 200px;
   padding-left: 15px;
-  border-bottom: 10px solid #eeeeee;
-  margin-bottom: 15px;
+  border-bottom: 5px solid #c2afaf;
 }
 main section {
   padding: 25px;
