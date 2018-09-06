@@ -1,9 +1,17 @@
 /* TYPOGRAPHY */
 
+/* Import fonts */
+@font-face {
+  font-family:'Norwester';
+  src:url('../fonts/norwester/webfonts/norwester.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+
 html { font-size: 18px; }
 /* responsive font sizes with calc() */
-h1   { font-size: calc(1rem + 8vw); }
-h2   { font-size: calc(1rem + 3vw); }
+h1   { font-size: calc(1rem + 8vw);font-family: "Norwester"; }
+h2   { font-size: calc(1rem + 3vw);font-family: "Norwester"; }
 h3   { font-size: 1.5rem; }
 p    { font-size: 1rem; }
 a    { font-size: 1.1rem; }
@@ -49,7 +57,7 @@ main {
     - 'vw' is short for 'viewport width'
     - It is a percent value of the width
       of the viewport.
-    - 1vw = 1% of viewport width 
+    - 1vw = 1% of viewport width
   */
 }
 section.more-content {
