@@ -45,6 +45,12 @@ main {
   grid-gap: 15px;
   grid-template-columns:
     minmax(1.2rem, 1fr) minmax(auto, 60vw) minmax(1.2rem, 1fr);
+  /*
+    - 'vw' is short for 'viewport width'
+    - It is a percent value of the width
+      of the viewport.
+    - 1vw = 1% of viewport width 
+  */
 }
 section.more-content {
   display: grid;
